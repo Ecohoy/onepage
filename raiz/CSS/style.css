@@ -1,0 +1,1465 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Francois+One&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0%;
+  scroll-behavior: smooth;
+
+}
+
+
+.fondo {
+
+  background-image: url(../IMG/fondo/Fondo.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin-top: -50px;
+  height: 600px;
+
+}
+
+img {
+  border-radius: 5%;
+}
+
+
+/* BARRA NAV */
+header {
+  position: sticky;
+  top: 0px;
+  z-index: 1000000;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+
+  .topnav a:not(:first-child),
+  .dropdown .dropbtn {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  .topnav.responsive .dropdown {
+    float: none;
+  }
+
+  .topnav.responsive .dropdown-content {
+    position: relative;
+  }
+
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+/* SEC */
+
+
+
+
+section {
+  padding-top: 2px;
+}
+
+#formulario {
+  padding-top: 40px;
+}
+
+/* TITULOS */
+
+h1 {
+
+  text-overflow: ellipsis;
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+
+}
+
+h2 {
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 5%;
+  background-color: #04AA6D;
+  font-size: 35px;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+p {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-top: 10px;
+  font-size: 20px;
+}
+
+li {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+}
+
+.titulo {
+  text-align: center;
+  background-color: #04AA6D;
+
+}
+
+figcaption {
+  font-family: "Francois One", sans-serif;
+  font-style: normal;
+
+}
+
+body {
+  background-color: rgb(190, 247, 228);
+}
+
+
+/* INICIO */
+
+.inicio img {
+  border-radius: 2%;
+  margin-left: 2vw;
+}
+
+.inicio p {
+  padding-left: 10px;
+  padding-top: 5%;
+}
+
+.inicio {
+  padding-top: 2px;
+  display: flex;
+  padding-right: 5%;
+  box-shadow: 2px 2px 14px rgba(0, 0, 0, 3.5);
+}
+
+/* POR QUE RECICLAR */
+
+.contexto_parrafo input[type="checkbox"] {
+  display: none;
+
+}
+
+.puntos {
+  display: none;
+}
+
+.contexto_parrafo {
+  margin-top: 20px;
+  margin-left: 50%;
+  padding: 2%;
+  border-radius: 5%;
+  z-index: 100;
+  background-color: rgba(245, 245, 220, 0.726);
+}
+
+
+.para_que_reciclaje {
+  display: flex;
+}
+
+.para_que_reciclaje img {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 30px;
+}
+
+.para_que_reciclaje img:hover {
+  z-index: 200;
+}
+
+/* CONSECUENCIAS */
+.titulo_consecuencias {
+  padding-top: 200px;
+
+}
+
+.consecuencias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  padding: 5%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* text-align: center; */
+
+  background-image: url(../IMG/fondo/marco.webp);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 882px, 752px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+  grid-area: 1 / 3 / 2 / 4;
+}
+
+
+
+.consecuencias ul li {
+  list-style: disc;
+  margin-left: 5%;
+}
+
+
+/* BENEFICIOS */
+
+.planeta_fondo {
+  background-image: url(../IMG/fondo/hojas.webp);
+  background-repeat: no-repeat;
+
+  background-position-x: -50px;
+  background-blend-mode: multiply;
+}
+
+.Beneficios_planeta {
+  padding-top: 3%;
+  padding-bottom: 5%;
+  display: flex;
+
+
+}
+
+.Beneficios_planeta div {
+  padding-right: 15px;
+  padding-top: 50px;
+
+
+}
+
+.nosotros_fondo {
+  background-image: url(../IMG/fondo/hojas2.webp);
+  background-repeat: no-repeat;
+
+  background-position-x: 1200px;
+}
+
+.beneficios_nosotros {
+  padding-top: 3%;
+  display: flex;
+}
+
+.beneficios_nosotros div {
+  padding-left: 15px;
+}
+
+.beneficios_reciclaje {
+
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+}
+
+/* ICONOS RECICLAJE */
+
+#separa_elementos div p {
+  text-align: center;
+}
+
+.iconos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+
+
+}
+
+.vidrio {
+  grid-area: 1 / 1 / 2 / 2;
+
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+
+
+}
+
+
+.vidrio:hover {
+  transform: rotateZ(360deg);
+}
+
+.madera {
+  grid-area: 1 / 2 / 2 / 3;
+  padding-right: 5vw;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+}
+
+.madera:hover {
+  transform: rotateZ(360deg);
+}
+
+.metal {
+  grid-area: 1 / 3 / 2 / 4;
+
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+}
+
+.metal:hover {
+  transform: rotateZ(360deg);
+}
+
+.plasticos {
+  grid-area: 1 / 4 / 2 / 5;
+
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+}
+
+.plasticos:hover {
+  transform: rotateZ(360deg);
+}
+
+.papel {
+  grid-area: 1 / 5 / 2 / 6;
+  padding-right: 5vw;
+
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+}
+
+
+.papel:hover {
+  transform: rotateZ(360deg);
+}
+
+.carton {
+  grid-area: 2 / 1 / 3 / 2;
+  display: flex;
+  justify-content: flex-end;
+  padding-left: 15vw;
+
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+
+}
+
+.carton:hover {
+  transform: rotateZ(360deg);
+}
+
+.organicos {
+  grid-area: 2 / 2 / 3 / 3;
+  display: flex;
+  justify-content: flex-end;
+
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+
+}
+
+.organicos:hover {
+  transform: rotateZ(360deg);
+}
+
+.especiales {
+  grid-area: 2 / 3 / 3 / 4;
+  display: flex;
+  justify-content: flex-end;
+
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+
+}
+
+.especiales:hover {
+  transform: rotateZ(360deg);
+}
+
+.raees {
+  grid-area: 2 / 4 / 3 / 5;
+  display: flex;
+  justify-content: flex-end;
+
+  /* Transformacion */
+  position: relative;
+  transform-style: preserve-3d;
+  transition-duration: 0.8s;
+}
+
+.raees:hover {
+  transform: rotateZ(360deg);
+}
+
+figure {
+  text-align: center;
+}
+
+
+
+
+/* VIDEOS */
+iframe {
+  width: 560px;
+  height: 315px;
+}
+
+.videos {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#massobrereciclaje p {
+  text-align: center;
+  padding-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 10px;
+}
+
+/* CONTACTO/FORMULARIO */
+
+
+.datos_form {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-around;
+
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+
+}
+
+fieldset {
+  padding: 20px;
+  margin-top: 25px;
+  margin-right: 50px;
+  border-style: dashed;
+  border-color: #04AA6D;
+  box-shadow: 2px 2px 14px #078658;
+}
+
+legend span {
+  border-bottom: solid 2px #04AA6D;
+
+  background-color: rgb(13, 132, 141);
+  padding: 5px;
+  color: #fcfcfc;
+
+
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15%;
+  background-color: rgb(13, 132, 141);
+  color: #fcfcfc;
+  font-size: 16px;
+
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.opcion_para_reciclar input {
+  margin-left: 10px;
+}
+
+.datos_personales input {
+  margin-left: 10px;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-right: 50px;
+  padding-left: 5px;
+}
+
+.datos_personales {
+  display: flex;
+
+}
+
+.contacto {
+  text-align: center;
+
+  padding: 10px;
+  margin-left: 30px;
+
+}
+
+.mail {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 50px;
+
+
+}
+
+.telefono {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  margin-right: 50px;
+
+}
+
+.texto-extenso {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  margin-left: 30px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #04AA6D;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.cierre {
+  margin-left: 50px;
+  display: flex;
+}
+
+.cierre ul {
+  margin-left: 30px;
+  margin-top: 50px;
+  list-style: none;
+}
+
+
+/* NOTEBOOK */
+@media (min-width: 1200px) and (max-width: 1439px) {
+
+
+  .planeta_fondo {
+    background-position-x: -50px;
+
+  }
+
+  .nosotros_fondo {
+    background-position-x: 800px;
+  }
+
+}
+
+/* TABLET */
+@media (min-width: 768px) and (max-width: 1199px) {
+
+  /* BARRA */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media screen and (max-width: 1199px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+      display: none;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 1199px) {
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+      float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+      position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  .fondo {
+    height: 300px;
+  }
+
+  .inicio img {
+    width: 300px;
+    height: 190px;
+    /* margin-top: 10%; */
+  }
+
+  /* POR QUE RECICLAR */
+
+
+
+  .contexto_parrafoII {
+    display: none;
+  }
+
+  .puntos {
+    display: block;
+  }
+
+  .contexto_parrafo input[type="checkbox"] {
+    height: 2em;
+    display: block;
+    appearance: none;
+
+  }
+
+  .contexto_parrafo label {
+    position: relative;
+    padding: 1em;
+    background-color: #04AA6D;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+
+  .contexto_parrafo label::before {
+    content: 'Leer más';
+  }
+
+  .contexto_parrafo input[type="checkbox"]:checked~label::before {
+    content: 'Leer menos';
+  }
+
+  .puntos:has(~ input[type="checkbox"]:checked) {
+    display: none;
+  }
+
+  .contexto_parrafoII:has(~ input[type="checkbox"]:checked) {
+    display: inline;
+  }
+
+
+  .contexto_parrafo {
+    margin-left: 20%;
+    margin-top: 20%;
+    border-radius: 5%;
+  }
+
+
+  .para_que_reciclaje img {
+    margin-left: 0;
+    height: 347px;
+    width: 768px;
+  }
+
+  /* CONSECUENCIAS */
+
+  .consecuencias {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(2, 0fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    padding-bottom: 120px;
+    background-position-y: 150px;
+    text-align: left;
+
+  }
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .div2 {
+    grid-area: 2 / 1 / 3 / 3;
+    padding-top: 20px;
+    padding-left: 15vw;
+    margin-right: 15vw;
+  }
+
+  .div3 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  /* BENEFICIOS */
+
+  .Beneficios_planeta {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .Beneficios_planeta div {
+    padding-bottom: 10px;
+  }
+
+  .beneficios_nosotros {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .beneficios_nosotros div {
+    padding-bottom: 10px;
+  }
+
+  .nosotros_fondo {
+    background-position-x: 400px;
+  }
+
+  /* ICONOS */
+
+  .iconos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+
+
+  }
+
+  .vidrio {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-left: 0vw;
+  }
+
+  .madera {
+    grid-area: 1 / 2 / 2 / 3;
+    padding-right: 0;
+
+  }
+
+  .metal {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .plasticos {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+
+
+  .papel {
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    justify-content: center;
+    margin-left: 100%;
+  }
+
+  .carton {
+    grid-area: 2 / 2 / 3 / 3;
+    justify-content: center;
+    margin-left: 100%;
+    padding-left: 0;
+  }
+
+  .organicos {
+    grid-area: 2 / 3 / 3 / 4;
+    justify-content: center;
+    margin-left: 100%;
+
+  }
+
+  .especiales {
+    grid-area: 3 / 2 / 4 / 3;
+    justify-content: center;
+
+  }
+
+  .raees {
+    grid-area: 3 / 3 / 4 / 4;
+    justify-content: center;
+  }
+
+
+
+
+  div figure figcaption {
+    text-align: center;
+  }
+
+
+  /* CONTACTO/FORMULARIO */
+
+
+  .datos_form {
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .datos_form img {
+    padding-left: 20vw;
+  }
+
+  fieldset {
+    margin-left: 50px;
+  }
+
+
+  .opcion_para_reciclar input {
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+
+  .botones {
+    margin-left: 15vw;
+  }
+
+
+
+}
+
+
+
+/* CELULARES */
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .topnav .icon {
+    display: none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+
+  .topnav a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .topnav a:not(:first-child),
+    .dropdown .dropbtn {
+      display: none;
+    }
+
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    .topnav.responsive {
+      position: relative;
+    }
+
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+      float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+      position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+
+  .p {
+    font-size: 14px;
+
+  }
+
+  ul li {
+    font-size: 14px;
+
+  }
+
+  section {
+    padding-top: 32px;
+  }
+
+  /* HEADER  */
+
+  /* BIENVENIDO */
+
+  .fondo {
+    height: 130px;
+
+  }
+
+  .inicio img {
+    padding-top: 0;
+    margin-left: 0vw;
+    border-radius: 2%;
+    width: 320px;
+    height: 203px;
+  }
+
+  .inicio p {
+    /* padding-left: 10px; */
+    padding-top: 0%;
+    padding-bottom: 10px;
+  }
+
+  .inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  /* POR QUE RECICLAR */
+
+
+
+  .contexto_parrafoII {
+    display: none;
+  }
+
+  .puntos {
+    display: block;
+  }
+
+  .contexto_parrafo input[type="checkbox"] {
+    height: 2em;
+    display: block;
+    appearance: none;
+
+  }
+
+  .contexto_parrafo label {
+    position: relative;
+    padding: 1em;
+    background-color: #04AA6D;
+    cursor: pointer;
+    border-radius: 10%;
+  }
+
+  .contexto_parrafo label::before {
+    content: 'Leer más';
+  }
+
+  .contexto_parrafo input[type="checkbox"]:checked~label::before {
+    content: 'Leer menos';
+  }
+
+  .puntos:has(~ input[type="checkbox"]:checked) {
+    display: none;
+  }
+
+  .contexto_parrafoII:has(~ input[type="checkbox"]:checked) {
+    display: inline;
+  }
+
+  .contexto_parrafo {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 150px;
+    border-radius: 5%;
+  }
+
+
+  .para_que_reciclaje img {
+    margin-left: 3px;
+    height: 145px;
+    width: 320px;
+  }
+
+
+
+
+  /* CONSECUENCIAS */
+
+  .consecuencias {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 2fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    padding-left: 0%;
+    padding-right: 0%;
+
+
+    /* background-image: url(../IMG/fondo/marco.webp); */
+    /* background-size:cover; */
+    background: none;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    /* background-position-x: 0%;
+  background-position-y: 50%; */
+  }
+
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .div1 img {
+    width: 320px;
+    height: 300px;
+  }
+
+  .div2 {
+    grid-area: 2 / 1 / 3 / 2;
+    padding-top: 40px;
+    background-image: url(../IMG/fondo/marco.webp);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position-x: 70%;
+    background-position-y: -50px;
+
+    margin-left: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+  }
+
+  .div3 {
+    grid-area: 3 / 1 / 4 / 2;
+
+  }
+
+  .div3 img {
+    width: 320px;
+    height: 300px;
+  }
+
+  .consecuencias ul li {
+    margin-left: 0%;
+    text-align: left;
+    padding-bottom: 10px;
+  }
+
+
+  /* BENEFICIOS */
+
+  .Beneficios_planeta {
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 0%;
+  }
+
+  .Beneficios_planeta img {
+    width: 320px;
+    height: 240px;
+  }
+
+  .Beneficios_planeta p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+  }
+
+  .beneficios_nosotros {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .beneficios_nosotros img {
+    width: 320px;
+    height: 240px;
+  }
+
+  .beneficios_nosotros p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+
+  }
+
+
+  .beneficios_nosotros div {
+    padding-left: 0px;
+  }
+
+  .beneficios_reciclaje {
+
+    padding-left: 0;
+    padding-right: 0%;
+    padding-top: 5%;
+  }
+
+  .nosotros_fondo {
+    background-position-x: 50px;
+  }
+
+
+  /* ICONOS */
+  .iconos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 8px;
+  }
+
+  .vidrio {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .madera {
+    grid-area: 1 / 2 / 2 / 3;
+    padding-right: 0;
+
+  }
+
+  .metal {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+
+  .plasticos {
+    grid-area: 2 / 2 / 3 / 3;
+  }
+
+  .papel {
+    grid-area: 3 / 1 / 4 / 2;
+    justify-content: center;
+
+  }
+
+  .carton {
+    grid-area: 3 / 2 / 4 / 3;
+    justify-content: center;
+    padding-left: 0;
+
+  }
+
+  .organicos {
+    grid-area: 4 / 1 / 5 / 2;
+    justify-content: center;
+  }
+
+  .especiales {
+    grid-area: 4 / 2 / 5 / 3;
+    justify-content: center;
+
+  }
+
+  .raees {
+    grid-area: 5 / 1 / 6 / 2;
+    justify-content: center;
+
+    margin-left: 100%;
+
+  }
+
+  /* VIDEOS */
+  iframe {
+    width: 315px;
+  }
+
+  .videos {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+  /* FORMULARIO */
+
+  .datos_form img {
+    height: 312px;
+    width: 312px;
+    padding-left: 0vw;
+
+  }
+
+  .datos_personales {
+    flex-direction: column;
+  }
+
+  .datos_form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  fieldset {
+    margin-left: 10px;
+  }
+
+  .opcion_para_reciclar legend span {
+    margin-top: 50px;
+    padding-left: 10px;
+    font-size: 13px;
+  }
+
+  .opcion_para_reciclar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-right: 0px;
+  }
+
+  .opcion_para_reciclar input {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
+
+
+
+  .botones {
+    margin-left: 5vw;
+  }
+
+  .contacto {
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  .mail {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .telefono {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .texto-extenso {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  /* FOOTER */
+
+  .cierre img {
+    width: 150px;
+    height: 230px;
+  }
+
+  .cierre ul li img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .cierre {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cierre ul {
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+}
